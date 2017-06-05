@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Events</title>
+  <link rel="shortcut icon" type="image/png" href="Images/logo.png"/>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <button class="planner" id="planner"><span class="planner-txt">Add To Planner</span></button>
+    <h1 class="XX-logo--text">Hack<span class="XX-logo--orange">XX</span>
+    <p id="organization">
+        Hosted by SD Hacks and TESC - Triton Engineering Student Council
+    </p>
+  </h1>
+
+  </div>
+
+  <div class="details">
+    <h2>June 3rd </h2>
+    <p>
+      Hack-hers unite at UCSD’s all-women 24 hour hackathon! HackXX is a place to work on new projects and learn skills with other awesome women in tech.
+    </p>
+    <p> To fuel your creativity, there will be: </p>
+    <li>mentors</li>
+    <li>workshops</li>
+    <li>free food and snacks</li>
+    <li>swag</li>
+    <li>prizes</li>
+    <p>This event is free and any woman age 18+, including trans and non-binary can attend! Male allies can register as technical mentors or event volunteers.
+    </p>
+    <p> Sign up at <a href="http://hackxx.sdhacks.io/">http://hackxx.sdhacks.io/</a></p>
+  </div>
+
+  <div class="Location">
+    <h3>Location
+      <p id="location">
+      Qualcomm Conference Center
+      La Jolla, California</p></h3>
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        // Create center marker at UCSD
+        var ucsd_ltlng = {
+          lat: 32.880,
+          lng: -117.236
+        };
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: ucsd_ltlng,
+          zoom: 15
+        });
+
+        var marker = new google.maps.Marker({
+          //icon: "Images/logo.png",
+          position: ucsd_ltlng,
+          map: map,
+          title: 'UCSD'
+        });
+      }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    </div>
+
+      <div class="Review">
+        <h4> Past
+          <span class="sight">Sight</span><span class="c-er">C-ers</span></h4>
+          <img src="Images/blogger.png" alt="blogger" style="width:707px;height:107px;">
+          <button id="planner2"><span class="planner-txt">Add To Planner</span></button>
+        </div>
+
+
+
+
+      <script src = "https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity = "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin = "anonymous" >
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

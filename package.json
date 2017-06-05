@@ -1,0 +1,19 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "Web app for SD Hacks Hack Day",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaila Lee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.6",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "pouchdb": "^6.1.1"
+  }
+}
